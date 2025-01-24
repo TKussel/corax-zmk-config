@@ -116,11 +116,11 @@
         colemak_layer {
             display-name = "Colemak";
             bindings = <
-                         &kp N1  &kp N2  &kp N3    &kp N4                                          &kp N5       &kp N6    &kp N7     &kp N8   &kp N9   &kp N0
-         &kp TAB         &kp Q   &kp W   &kp F     &kp P     &kp B                                 &kp J        &kp L     &kp U      &kp Y    &ud_sqt  &kp RC(RA(F13)) 
-&kp ESC  &kp LCTRL       &kp A   &kp R   &kp S     &kp T     &kp G                                 &kp M        &kp N     &kp E      &kp I    &kp O    &kp BSPC         &kp RC(RA(F13))
-         &mt LSHFT LBRC  &kp Z   &kp X   &kp C     &kp D     &kp V          &kp C_MUTE  &kp C_PP   &kp K        &kp H     &kp COMMA  &kp DOT  &kp DEL  &mt RSHFT RBRC
-                                         &kp LGUI  &kp LALT  &lthp SYM ESC  &kp SPACE   &kp ENTER  &lt NAV ESC  &kp RALT  &kp RGUI
+                         &kp N1  &kp N2  &kp N3    &kp N4                                             &kp N5       &kp N6    &kp N7     &kp N8   &kp N9   &kp N0
+         &kp TAB         &kp Q   &kp W   &kp F     &kp P     &kp B                                    &kp J        &kp L     &kp U      &kp Y    &ud_sqt  &kp MINUS 
+&kp ESC  &mt LSHFT LBRC  &kp A   &kp R   &kp S     &kp T     &kp G                                    &kp K        &kp N     &kp E      &kp I    &kp O    &kp BSPC         &kp RC(RA(F13))
+         &kp LCTRL       &kp Z   &kp X   &kp C     &kp D     &kp V        &kp C_MUTE      &kp C_PP    &kp M        &kp H     &kp COMMA  &kp DOT  &kp DEL  &mt RSHFT RBRC
+                                         &kp LGUI  &kp LALT  &kp SPACE    &lthp SYM ESC   &lt NAV ESC &kp ENTER   &kp RALT  &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -144,8 +144,8 @@
             bindings = <
                    &kp TILDE  &kp N1  &kp N2  &kp N3  &kp N4                  &trans  &trans  &trans  &trans  &trans
         &kp TAB    &kp TAB    &kp Q   &kp W   &kp E   &kp R                   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LCTRL  &kp LCTRL  &kp A   &kp S   &kp D   &kp F                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &kp LSHIFT &kp LSHIFT &kp Z   &kp X   &kp C   &kp V   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHIFT &kp LSHIFT &kp A   &kp S   &kp D   &kp F                   &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &kp LCTRL  &kp LCTRL  &kp Z   &kp X   &kp C   &kp V   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
