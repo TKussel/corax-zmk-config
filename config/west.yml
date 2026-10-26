@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: dnlbauer
+      url-base: https://github.com/dnlbauer
   projects:
     - name: zmk
       import: app/west.yml
       remote: zmkfirmware
       revision: v0.3
+    - name: zmk-keyboards-corax
+      remote: dnlbauer
+      revision: 5b612b0d867cc73c04a9225bbf29c44a921df296
   self:
     path: config
