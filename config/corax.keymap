@@ -133,7 +133,7 @@
             display-name = "Colemak";
             bindings = <
                          &kp N1  &kp N2  &kp N3    &kp N4                                             &kp N5       &kp N6    &kp N7     &kp N8   &kp N9   &kp N0
-         &kp TAB         &kp Q   &kp W   &kp F     &kp P     &kp B                                    &kp J        &kp L     &kp U      &kp Y    &ud_sqt  &kp MINUS 
+         &kp TAB         &kp Q   &kp W   &kp F     &kp P     &kp B                                    &kp J        &kp L     &kp U      &kp Y    &ud_sqt  &kp MINUS
 &kp ESC  &mt LSHFT LBRC  &kp A   &kp R   &kp S     &kp T     &kp G                                    &kp K        &kp N     &kp E      &kp I    &kp O    &kp BSPC         &kp RC(RA(F13))
          &kp LCTRL       &kp Z   &kp X   &kp C     &kp D     &kp V        &kp C_MUTE      &kp C_PP    &kp M        &kp H     &kp COMMA  &kp DOT  &kp DEL  &mt RSHFT RBRC
                                          &kp LGUI  &kp LALT  &kp SPACE    &lthp SYM ESC   &lt NAV ESC &kp ENTER   &kp RALT  &kp RGUI
@@ -204,7 +204,7 @@
         &trans  &none  &kp F7 &kp F8  &kp F9  &kp F10                 &none   &none         &none     &none       &none  &trans
 &trans  &trans  &none  &kp F1 &kp F2  &kp F3  &none                   &none   &to COLEMAK   &to WASD  &to QWERTY  &none  &trans  &trans
         &trans  &none  &kp F4 &kp F5  &kp F6  &none   &trans  &trans  &none   &none         &none     &none       &trans &trans
-                              &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  
+                              &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
