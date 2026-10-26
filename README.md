@@ -26,10 +26,10 @@ revision in `.github/workflows/build.yaml` when upgrading.
 
 ## Building and flashing
 
-Pushing a commit or opening a pull request runs the GitHub Actions build. A
-manual build can also be started from the Actions tab. Download the generated
-firmware artifact and copy the appropriate UF2 file to each controller while it
-is in bootloader mode.
+Pushing to `main` or opening a pull request targeting `main` runs the GitHub
+Actions build. A manual build can also be started from the Actions tab. Download
+the generated firmware artifact and copy the appropriate UF2 file to each
+controller while it is in bootloader mode.
 
 See the [ZMK user setup documentation](https://zmk.dev/docs/user-setup) for
 local tooling, build, and flashing instructions.
