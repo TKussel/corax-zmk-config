@@ -4,6 +4,9 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+#include <dt-bindings/zmk/pointing.h>
+
 #define COLEMAK 0
 #define QWERTY 1
 #define WASD 2
@@ -15,6 +18,12 @@
 // additional caps word keys
 &caps_word {
     continue-list = <UNDERSCORE MINUS LS(MINUS) UP DOWN LEFT RIGHT BSPC DEL>;
+};
+
+&msc {
+    acceleration-exponent = <0>;
+    time-to-max-speed-ms = <0>;
+    delay-ms = <0>;
 };
 
 / {
@@ -34,6 +43,13 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
+        };
+
+        inc_dec_msc: sensor_rotation_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <200>;
         };
     };
 
@@ -123,7 +139,7 @@
                                          &kp LGUI  &kp LALT  &kp SPACE    &lthp SYM ESC   &lt NAV ESC &kp ENTER   &kp RALT  &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_msc SCRL_DOWN SCRL_UP>;
         };
 
         qwerty_layer {
