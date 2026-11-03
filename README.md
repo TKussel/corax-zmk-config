@@ -16,8 +16,12 @@ The configuration supports:
 
 ## Dependencies
 
-The firmware is built against the stable ZMK `v0.3` release. The Corax shield
-is provided by the external
+The firmware is built against a pinned [ZMK](https://zmk.dev/) `main` commit
+(`4dd95d7`). This is required for the nice!view displays: the `ls0xx` driver in
+ZMK v0.3 does not toggle VCOM on the nice!view (no EXTCOMIN wire on its
+5-pin connector), which leaves the panels in a DC-biased, washed-out state —
+fixed upstream by [serial VCOM inversion (#3294)](https://github.com/zmkfirmware/zmk/pull/3294).
+The Corax shield is provided by the external
 [`zmk-keyboards-corax`](https://github.com/dnlbauer/zmk-keyboards-corax)
 module, pinned to a tested commit in `config/west.yml`.
 
