@@ -1,1 +1,9 @@
 *.uf2
+
+# Local west workspace + build output
+.west/
+build/
+zmk/
+zephyr/
+modules/
+zmk-keyboards-corax/
