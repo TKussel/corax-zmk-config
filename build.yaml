@@ -1,9 +1,9 @@
 # GitHub Actions build matrix for both halves of the Corax.
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: corax_left nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: corax_right nice_view
